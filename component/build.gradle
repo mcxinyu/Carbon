@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 30
     buildToolsVersion = '29.0.2'
 
-    buildFeatures.viewBinding = true
+    android.buildFeatures.viewBinding = true
 
     defaultConfig {
         minSdkVersion 14
@@ -31,5 +31,6 @@ android {
 
 dependencies {
     api project(':carbon')
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.5.0'
 }
