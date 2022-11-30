@@ -1,5 +1,5 @@
 .gradle
 local.properties
-/.idea
+.idea
 build
 Carbon.iml
